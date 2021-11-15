@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.2.0"
+    id 'org.springframework.boot' version '2.5.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+sourceSets.main.resources.srcDirs = ["resources"]
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    annotationProcessor 'org.hibernate:hibernate-jpamodelgen'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    runtimeOnly 'com.h2database:h2:1.4.200'
+
+    testCompileOnly 'org.springframework.boot:spring-boot-starter-test'
+    testCompileOnly 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
