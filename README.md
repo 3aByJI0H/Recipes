@@ -1,6 +1,6 @@
 # Recipes
 
-The project is from https://hyperskill.org/projects/180?track=12
+The project is taken from https://hyperskill.org/projects/180?track=12
 
 An urge to cook something special is too hard to resist sometimes. But what if you lost the recipe? 
 Or your beloved grandma is too busy to answer a call and remind you of your favorite cake recipe? 
